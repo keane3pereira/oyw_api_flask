@@ -11,6 +11,6 @@ This repository contains the backend for both, written in Flask.
 
 If you want to check out the code for the Scanner App, visit https://github.com/sansqra/oywscanner.
 
-Here's a few friends from the team:, written in Flask.
+Here's a few friends from the team:
 https://github.com/sansqra
 https://github.com/clydemendonca
