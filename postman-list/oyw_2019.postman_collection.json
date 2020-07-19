@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "abb96ac6-e6ed-4938-9b85-72437bf97009",
+		"name": "oyw_2019",
+		"description": "testing apis for oyw19 registration and scanning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "volunteers",
+			"item": [
+				{
+					"name": "http://dev-api.orlemyouthweek.in/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "keanep",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abc123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/login",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/volunteers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoxMiwiaXNfYWRtaW4iOnRydWV9.Xh897knIduKsVEQCSIgvrF81hV2Ul9gM87qrm7Hg1pA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/volunteers",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"volunteers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_volunteer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoxMiwiaXNfYWRtaW4iOnRydWV9.Xh897knIduKsVEQCSIgvrF81hV2Ul9gM87qrm7Hg1pA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Keane",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "keane_pereira",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "keane123",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "sa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/volunteers",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"volunteers"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "passes",
+			"item": [
+				{
+					"name": "http://dev-api.orlemyouthweek.in/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoyOCwiaXNfYWRtaW4iOnRydWV9.coESXSeFo73aR_KSMWaGBAluY6P4WamXPwQhvkErcPM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Keane",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9769831280",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "ends",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "weeks",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/register",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/display_codes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "79e2ca12b65b750ddf5f8bac7afdc613763c1ea5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/display_codes",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"display_codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/download_pass",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "79e2ca12b65b750ddf5f8bac7afdc613763c1ea5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweekin/download_pass",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweekin"
+							],
+							"path": [
+								"download_pass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/accept_pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoyOCwiaXNfYWRtaW4iOnRydWV9.coESXSeFo73aR_KSMWaGBAluY6P4WamXPwQhvkErcPM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "9167429371",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "d",
+									"type": "text"
+								},
+								{
+									"key": "qty",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/accept_pass",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"accept_pass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/scan_pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoyOCwiaXNfYWRtaW4iOnRydWV9.coESXSeFo73aR_KSMWaGBAluY6P4WamXPwQhvkErcPM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "d8788931d91e4b3a4aafd5f4f2830d360160beabdf28891aa5076e8320686e9a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/scan_pass",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"scan_pass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://dev-api.orlemyouthweek.in/get_all_customer_transactions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2EiLCJ1c2VyX2lkIjoyOCwiaXNfYWRtaW4iOnRydWV9.coESXSeFo73aR_KSMWaGBAluY6P4WamXPwQhvkErcPM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "9769831280",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://dev-api.orlemyouthweek.in/get_all_customer_transactions",
+							"protocol": "http",
+							"host": [
+								"dev-api",
+								"orlemyouthweek",
+								"in"
+							],
+							"path": [
+								"get_all_customer_transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
