@@ -2,7 +2,7 @@ Flask==1.1.2
 requests==2.24.0
 pytz==2020.1
 apscheduler==3.6.3
-flask_cors==3.0.8
+flask_cors==3.0.9
 flask_sqlalchemy==2.4.4
 fnvhash==0.1.0
 Pillow==7.2.0
